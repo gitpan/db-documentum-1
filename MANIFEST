@@ -1,0 +1,14 @@
+CHANGES
+Documentum.pm
+Documentum.xs
+Documentum/Tools.pm
+MANIFEST
+Makefile.PL
+test.pl
+README
+etc/dm_check_password.pl
+etc/dm_check_password_smb.pl
+etc/idql.pl
+INSTALL
+Documentum/tools.html
+documentum.html

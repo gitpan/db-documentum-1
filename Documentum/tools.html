@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+<TITLE>Db::Documentum::Tools - Support functions for Db::Documentum.</TITLE>
+<LINK REV="made" HREF="mailto:">
+</HEAD>
+
+<BODY>
+
+<A NAME="__index__"></A>
+<!-- INDEX BEGIN -->
+
+<UL>
+
+	<LI><A HREF="#name">NAME</A></LI>
+	<LI><A HREF="#synopsis">SYNOPSIS</A></LI>
+	<LI><A HREF="#description">DESCRIPTION</A></LI>
+	<LI><A HREF="#license">LICENSE</A></LI>
+	<LI><A HREF="#author">AUTHOR</A></LI>
+	<LI><A HREF="#see also">SEE ALSO</A></LI>
+</UL>
+<!-- INDEX END -->
+
+<HR>
+<P>
+<H1><A NAME="name">NAME</A></H1>
+<P>Db::Documentum::Tools - Support functions for Db::Documentum.</P>
+<P>
+<HR>
+<H1><A NAME="synopsis">SYNOPSIS</A></H1>
+<PRE>
+        use Db::Documentum::Tools;
+        use Db::Documentum::Tools qw(:all);</PRE>
+<PRE>
+        $session_id = dm_Connect($docbase,$user,$password);
+        $session_id = dm_Connect($docbase,$user,$password,
+                                 $user_arg_1,$user_arg_2);</PRE>
+<PRE>
+        $error_msg = dm_LastError();
+        $error_msg = dm_LastError($session_id);
+        $error_msg = dm_LastError($session_id,1);
+        $error_msg = dm_LastError($session_id,$level,$number);
+</PRE>
+<PRE>
+
+    $object_id = dm_CreateObject(&quot;dm_document&quot;,%ATTRS);
+    $object_id = dm_CreateObject(&quot;dm_document&quot;);</PRE>
+<PRE>
+    $api_stat = dm_CreateType(&quot;my_document&quot;,&quot;dm_document&quot;,%field_defs);
+    $api_stat = dm_CreateType(&quot;my_document&quot;,&quot;dm_document&quot;);
+</PRE>
+<PRE>
+
+    $obj_id = dm_CreatePath('/Temp/Test/Unit-1');</PRE>
+<PRE>
+        $session_id = dm_KrbConnect($docbase);</PRE>
+<PRE>
+        $hostname = dm_LocateServer($docbase);</PRE>
+<P>
+<HR>
+<H1><A NAME="description">DESCRIPTION</A></H1>
+<P>Db::Documentum::Tools is a collection of frequently used Documentum procedures
+encapsulated by Perl.</P>
+<P>
+<HR>
+<H1><A NAME="license">LICENSE</A></H1>
+<P>The Documentum perl extension may be redistributed under the same terms as Perl.
+The Documentum EDMS is a commercial product.  The product name, concepts,
+and even the mere thought of the product are the sole property of
+Documentum, Inc. and its shareholders.</P>
+<P>
+<HR>
+<H1><A NAME="author">AUTHOR</A></H1>
+<P>Brian W. Spolarich, ANS/UUNET WorldCom, <CODE>briansp@ans.net</CODE>
+M. Scott Roth, Science Applications International Corporation,
+<CODE>Scott_Roth@saic-nmsd.com</CODE></P>
+<P>
+<HR>
+<H1><A NAME="see also">SEE ALSO</A></H1>
+<P>Db::Documentum.</P>
+
+</BODY>
+
+</HTML>
